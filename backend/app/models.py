@@ -1,0 +1,20 @@
+from django.db import models
+
+class Data(models.Model):
+    end_year = models.CharField(max_length=10, blank=True)
+    intensity = models.IntegerField()
+    sector = models.CharField(max_length=100)
+    topic = models.CharField(max_length=100)
+    insight = models.CharField(max_length=250)
+    url = models.URLField(max_length=250)
+    region = models.CharField(max_length=100)
+    start_year = models.CharField(max_length=10, blank=True)
+    impact = models.CharField(max_length=100, blank=True)
+    added = models.CharField(max_length=100)
+    published = models.CharField(max_length=100)
+    country = models.CharField(max_length=100)
+    relevance = models.IntegerField()
+    pestle = models.CharField(max_length=100)
+    source = models.CharField(max_length=100)
+    title = models.CharField(max_length=250)
+    likelihood = models.IntegerField()
